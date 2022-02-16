@@ -27,8 +27,9 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
   </head>
 
   <body>
@@ -74,26 +75,10 @@
         </div>
         <ul class="d-flex container-md">
           <li class="active">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-house-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
-              />
-            </svg>
+            <img src="img/home.png" alt="">
           </li>
           <li>
-            <a href="">NHÂN HỌC</a> <i class="fa fa-angle-down"></i>
+            <span>NHÂN HỌC</span> <i class="fa fa-angle-down"></i>
             <ul class="child_list">
               <li>Item</li>
               <li>Item</li>
@@ -102,7 +87,7 @@
             </ul>
           </li>
           <li>
-            <a href="">VĂN HÓA VIỆT</a> <i class="fa fa-angle-down"></i>
+            <span>VĂN HÓA VIỆT</span> <i class="fa fa-angle-down"></i>
             <ul class="child_list">
               <li>Item</li>
               <li>Item</li>
@@ -111,7 +96,7 @@
             </ul>
           </li>
           <li>
-            <a href="">DOANH NHÂN VIỆT</a> <i class="fa fa-angle-down"></i>
+            <span>DOANH NHÂN VIỆT</span> <i class="fa fa-angle-down"></i>
             <ul class="child_list">
               <li>Item</li>
               <li>Item</li>
@@ -121,7 +106,7 @@
           </li>
           <li><a href="">KOLS VIỆT</a></li>
           <li>
-            <a href="">GÓC SƯU TẦM</a><i class="fa fa-angle-down"></i>
+            <span>GÓC SƯU TẦM</span><i class="fa fa-angle-down"></i>
             <ul class="child_list">
               <li>Item</li>
               <li>Item</li>
@@ -143,7 +128,7 @@
           <section class="baivietnoibat">
             <div class="head_top d-flex">
               <h2>Bài viết nổi bật</h2>
-              <a href="">Xem tất cả<i class="fa fa-angle-double-right"></i></a>
+              <a href="">Xem tất cả<img src="img/next.png"></img></a>
             </div>
             <div class="baivietnoibat_mid row">
               <div class="col-sm-5 col-md-4">
@@ -223,25 +208,27 @@
           <section class="baivietmoi">
             <div class="head_top d-flex">
               <h2>BÀI VIẾT MỚI</h2>
-              <a href="">Xem tất cả<i class="fa fa-angle-double-right"></i></a>
+              <a href="">Xem tất cả<img src="img/next.png"></img></a>
             </div>
             <div class="baivietmoi_mid row">          
-              <div class="baivietmoi_items col-sm-4">
+              <div class="baivietmoi_items col-sm-4" >
                 <a href="">
-                  <img src="img/04.png" alt="" />
-                  <h5>Tử vi con giáp tháng 10 năm 2021</h5></a
+                  <img class="img-fluid"  src="img/04.png" alt="" />
+                  <h5 style="font-size:18px">Tử vi con giáp tháng 10 năm 2021</h5></a
                 >
               </div>
               <div class="baivietmoi_items col-sm-4">
                 <a href="">
-                  <img src="img/so4.png" alt="Khám phá số 4 trong thần số học" />
-                  <h5>Khám phá số 4 trong thần số học</h5></a
+                    <img class="img-fluid" src="img/so4.png" alt="Khám phá số 4 trong thần số học" />
+                  <h5 style="font-size:16px" class="">Khám phá số 4 trong thần số học</h5></a
                 >
+                  
+                  
               </div>
-              <div class="baivietmoi_items col-sm-4">
+              <div class="baivietmoi_items col-sm-4 ">
                 <a href="">
-                  <img src="img/kieng.png" alt="Điều kiêng kị không nên làm vào ban đêm" />
-                  <h5>Điều kiêng kị không nên làm vào ban đêm</h5></a
+                  <img class="img-fluid" src="img/kieng.png" alt="Điều kiêng kị không nên làm vào ban đêm" />
+                  <h5 style="font-size:16px">Điều kiêng kị không nên làm vào ban đêm</h5></a
                 >
               </div>
             </div>
@@ -252,7 +239,7 @@
           <section class="goctho">
             <div class="head_top2 d-flex">
               <h2>Góc thơ</h2>
-              <a href="">Xem tất cả<i class="fa fa-angle-double-right"></i></a>
+              <a href="">Xem tất cả<img src="img/next2.png"></img></a>
             </div>
             <div class="row">
               <div class="col-sm-3 col-6">
@@ -288,7 +275,7 @@
           <section class="tintuc">
             <div class="head_top2 d-flex">
               <h2>TIN TỨC</h2>
-              <a href="">Xem tất cả<i class="fa fa-angle-double-right"></i></a>
+              <a href="">Xem tất cả<img src="img/next2.png"></img></a>
             </div>
             <div class="row">
               <div class="col-12 col-sm-6">
@@ -378,34 +365,21 @@
               </div>
               <div class="nguoidocviet_item row">
                 <div class="col-4">
-                  <img class="w-100" src="images/webimg_10.gif" alt="" />
+                  <img class="w-100" src="img/phongthuyxau.png" alt="8 dấu hiệu phong thủy xấu trong nhà" />
                 </div>
                 <h5 class="col-8">
                   <a href=""
-                    >Cây phong thủy hợp mệnh, 12 con giáp nên trồng để tăng tài
-                    lộc 4 tháng cuối năm</a
+                    >8 dấu hiệu phong thủy xấu trong nhà</a
                   >
                 </h5>
               </div>
               <div class="nguoidocviet_item row">
                 <div class="col-4">
-                  <img class="w-100" src="images/webimg_10.gif" alt="" />
+                  <img class="w-100" src="img/9ky.png" alt="9 đại kỵ trong phong thủy nhà ở và cách hóa giải đơn giản không phải ai cũng biết" />
                 </div>
                 <h5 class="col-8">
                   <a href=""
-                    >Cây phong thủy hợp mệnh, 12 con giáp nên trồng để tăng tài
-                    lộc 4 tháng cuối năm</a
-                  >
-                </h5>
-              </div>
-              <div class="nguoidocviet_item row">
-                <div class="col-4">
-                  <img class="w-100" src="images/webimg_10.gif" alt="" />
-                </div>
-                <h5 class="col-8">
-                  <a href=""
-                    >Cây phong thủy hợp mệnh, 12 con giáp nên trồng để tăng tài
-                    lộc 4 tháng cuối năm</a
+                    >9 đại kỵ trong phong thủy nhà ở và cách hóa giải đơn giản không phải ai cũng biết</a
                   >
                 </h5>
               </div>
@@ -431,7 +405,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >Phong thủy nhà bếp, 5 điều cấm kỵ, phạm phải 1 cũng nên sửa để bảo vệ sức khỏe, tiền tài</a
                   >
                 </div>
               </li>
@@ -441,7 +415,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >7 đặc điểm của căn nhà 'càng ở càng có tiền', may mắn gõ cửa</a
                   >
                 </div>
               </li>
@@ -451,7 +425,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >Mua nhà ở 4 vị trí này, rẻ mấy cũng không nên mua kẻo ảnh hưởng tài lộc</a
                   >
                 </div>
               </li>
@@ -461,7 +435,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >8 vật phẩm phong thủy giá 'chát' đại gia lùng mua ngay</a
                   >
                 </div>
               </li>
@@ -478,7 +452,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >7 kỹ năng phát triển bản thân quyết định tương lai của các bạn trẻ</a
                   >
                 </div>
               </li>
@@ -488,7 +462,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >9 bước xây dựng chiến lược phát triển sự nghiệp cá nhâng</a
                   >
                 </div>
               </li>
@@ -498,7 +472,7 @@
                 </div>
                 <div class="col-11">
                   <a href=""
-                    >Sở hữu 1 trong 5 nốt ruồi phú quý này cả đời giàu sang</a
+                    >Học 4 chiến lược phát triển bản thân hiệu quả để thành công</a
                   >
                 </div>
               </li>
@@ -538,19 +512,19 @@
               <h3>CHUYỂN ĐỔI LỊCH ÂM DƯƠNG</h3>
               <form action="">
                 <div class="row">
-                  <div class=" col-4">
+                  <div class=" col-4 col-xxl-2">
                     <label for="">Ngày</label>
                     <input type="number" name="" id="" />
                   </div>
-                  <div class=" col-4">
+                  <div class=" col-4 col-xxl-2">
                     <label for="">Tháng</label>
                     <input type="number" name="" id="" />
                   </div>
-                  <div class=" col-4">
+                  <div class=" col-4 col-xxl-2">
                     <label for="">Năm</label>
                     <input type="number" name="" id="" />
                   </div>
-                  <div class="col-12 d-flex justify-content-center flex-column mt-3">
+                  <div class="col-12 d-flex justify-content-center flex-column mt-3 mt-xxl-0 col-xxl-6">
                     <label for="">Từ</label>
                     <select name="" id="">
                       <option value="">Dương lịch - Âm lịch</option>
