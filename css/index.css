@@ -1,0 +1,451 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/* HEADER */
+.header_login {
+    padding:10px 0px;
+    background-color: rgb(0, 73, 155);
+}
+.header_login div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header_login a{
+    color: white;
+    padding: 0px 10px;
+}
+.header_login a:first-child{
+    border-right: 1px solid white;
+}
+.header_login a:last-child{
+    background-color: rgb(221,188,94);
+    border-radius: 10px;
+    color:black;
+    font-weight: bold;
+}
+.header_search{
+    width: 100%;
+    height:100px;
+    background-image: url(../img/bghead.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.header_search .container-lg .row{
+    display: flex;
+    align-items: center;
+}
+.header_search form{
+    text-align: right;
+    position: relative;
+    top:-20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius:3px;
+    display: flex;
+    align-items: center;
+}
+.header_search form input,.header_search form button{
+    border:none;
+    background-color:transparent ;
+}
+.header_search form input{
+    padding-left: 10px;
+}
+.header_search form button{
+    position: relative;
+    left:-10px;
+    color:gray;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.form_contain{
+    display: flex;
+    justify-content: flex-end;
+}
+.header_search form input:focus{
+    outline:none;
+}
+nav{
+    box-shadow: 0px 7px 7px 0px rgba(128, 128, 128, 0.274)
+}
+nav>ul {
+    align-items: center;
+    list-style: none;
+    justify-content:flex-start;
+    padding-left:0px;
+}
+nav>ul>li{
+    position: relative;
+    margin: 10px 0px; text-align: center;
+    padding: 5px 30px;
+    border-right: 1px solid rgb(99, 99, 99) ;
+    
+}
+nav>ul>li:last-child{
+    border: none;
+}
+nav>ul>li:first-child{
+    color:rgb(0, 73,155);
+}
+nav>ul>li>a{
+    color:black;
+    font-weight:bold;
+}
+.child_list{
+    position: absolute;
+    display: none;
+}
+li.active::after{
+    content: "";
+    display:block;
+    height: 2px;
+    margin-top: 10px;
+    padding: 0px 30px;
+    background-color:rgb(0, 73,155);
+}
+
+/* IMG_INTRO */
+section{
+    width: 100%;
+    padding: 15px;
+}
+.intro_img img{
+    width: 100%;
+}
+.head_top{
+    background-color: rgb(0, 73, 155);
+    align-items:center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin-bottom:30px;
+}
+.head_top h2{
+    color:rgb(255,213,100);
+    text-transform:uppercase;
+    font-size: 23px;
+    margin: 0;
+}
+.head_top a{
+    color:white;
+    font-size: 20px ;
+}
+.head_top a i{
+    font-size:25px;
+    margin-left: 5px;
+}
+.baivietnoibat_mid h3{
+    color:rgb(0, 68, 146); 
+}
+.baivietnoibat_mid img{
+    width: 100%;
+}
+.baivietnoibat_mid h3~span{
+    text-align:justify;
+}
+.baivietnoibat_bottom>div{
+    margin: 30px 0px 0px;
+}
+.baivietnoibat_bottom>div h4{
+    margin-bottom: 5px;
+    font-size:22px;
+    color:rgb(0, 68, 146); 
+}
+.baivietmoi img{
+    width: 100%;
+    margin-bottom:10px;
+    color:black;
+    font-weight: bold;
+}
+.baivietmoi_items{
+    margin-bottom:50px;
+}
+
+.head_top2{
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    margin-bottom:20px;
+}
+.head_top2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:rgb(0, 68, 146); 
+    top:100%;
+    left: 0;
+
+}
+.head_top2 h2{
+    display: inline-block;
+    background-color:rgb(0, 68, 146); 
+    margin-bottom: 0px;
+    padding: 5px 10px;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 23px ;
+}
+.head_top2 a{
+    font-size: 20px;
+}
+.head_top2 a i{
+    margin-left: 10px;
+}
+.goctho img{
+    width: 100%;
+}
+.goctho .row p:first-of-type{
+    
+    margin-top: 10px;
+}
+.goctho .row p{
+    text-align: center;
+}
+.tintuc img{
+    width: 100%;
+}
+.tintuc h3{
+    font-size:23px ;
+    color: rgb(0, 68, 146); 
+    margin-top: 10px;
+    cursor: pointer;
+}
+.tintuc p{
+    text-align: justify;
+}
+.tintuc_item > p{
+    padding-left: 0px;
+    text-align: left;
+    padding-top: 10px;
+    font-weight:600 ;
+
+}
+.tintuc_item{
+    margin-bottom: 15px;
+}
+
+/* NGUOI DOC VIET */
+.nguoidocviet_mid img{
+    width: 100%;
+    margin-bottom: 10px;
+} 
+.nguoidocviet_mid h3 a{
+    color:rgb(0, 68, 146); 
+}   
+.nguoidocviet_item {
+    margin-bottom:10px;
+}
+
+/* BAIVIETHAY */
+.baiviethay ul,.phattrienbanthan ul{
+    list-style-type: none;
+    padding:0px;
+}
+.baiviethay ul img,.phattrienbanthan ul img{
+    width: 50%;
+    transform:translateX(15px)
+}
+.baiviethay ul li,.phattrienbanthan ul li{
+    margin-bottom: 10px;
+}
+.baiviethay ul li a,.phattrienbanthan ul li a{
+    color:rgb(0, 68, 146); 
+}
+
+/* PYTHAGO FORM */
+.tracuusohoc h3{
+    background-color:rgb(0, 68, 146); 
+    font-size: 23px;
+    text-align:center;
+    color:rgba(217, 255, 0, 0.973);
+    padding: 15px ;
+    margin-bottom: 0px;
+}
+.tracuusohoc form{
+    background-image: url(../img/pytagobg.png);
+    padding: 10px;
+}
+.tracuusohoc form label{
+    color: white;
+    margin-bottom: 10px;
+}
+.tracuusohoc form>input{
+    margin-bottom: 15px;
+}
+.tracuusohoc form>input:first-of-type{
+    border-radius: 5px;
+    width: 100%;
+    padding:10px;
+    border: none;
+}
+.tracuusohoc form>input:nth-of-type(2){
+    border-radius: 5px;
+    width: 60%;
+    padding:10px;
+    border: none;
+}
+.tracuusohoc form>select{
+    border-radius: 5px;
+    width: 38%;
+    padding:10px;
+}
+.pythago_birth input{
+    width: 100%;
+    padding:10px;
+}
+.tracuusohoc button{
+    width: 100%;
+    background-color:rgb(223, 160, 7);
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+/* LICH AM DUONG */
+.chuyendoilichamduong h3{
+    background-image: url(../img/gradient.png);
+    font-size: 23px;
+    text-align:center;
+    color:rgb(0, 68, 146); 
+    padding: 15px ;
+    margin-bottom: 0px;
+}
+.chuyendoilichamduong form{
+    background-image: url(../img/amduong.png);
+    background-size: cover;
+    padding:10px;
+    background-position: center center;
+} 
+.chuyendoilichamduong input{
+    width: 100%;
+    border:1px solid rgb(0, 68, 146); 
+}
+.chuyendoilichamduong label{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    color:rgb(0, 68, 146);
+}
+.chuyendoilichamduong select{
+    border-radius: 0;
+    color:red;
+    border:1px  solid rgb(0, 68, 146); 
+}
+.chuyendoilichamduong button{
+    background-color:rgb(196, 0, 0);
+    border-radius:20px;
+    color:yellow;
+    display:block;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+.footer_info{
+    background-image: url(../img/footerbg.png);
+    background-size: cover;
+    background-position: center;
+    padding:20px 0px;
+}
+.footer_info i{
+    color:rgb(223, 160, 7);
+    margin-right: 5px;
+}
+.footer_info p{
+    margin: 10px 0px;
+}
+.footer_info p a{
+    color:white;
+}
+.footer_info h5 a{
+    color:rgb(223, 160, 7);
+    text-decoration: underline rgba(223, 158, 7, 0.377) solid; 
+}
+.social img{
+    margin-right: 10px;
+}
+.colum1 p{
+    color:white; 
+}
+.colum1 p:nth-child(4) i,.colum1 p:nth-child(5) i{
+    color:white
+}
+.footer_bottom {
+    background-color:rgb(223, 160, 7);
+}
+.menumobile {
+    display: none;
+}
+@media (max-width:1399.99px) {
+    
+}
+@media (max-width:1199.99px) {
+    .header_search form{
+        display: none;
+    }
+    nav>ul>li{
+        padding: 10px 10px;
+    }
+}
+@media (max-width:991.98px) {
+    
+}
+@media (max-width:767.98px) {
+    body > header > div.header_search > div > div > div:nth-child(2) > img{
+        margin-right:10px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        display:none;
+        border: none;
+    }
+    .menumobile{
+        display: block;
+        padding: 10px;
+    }
+    .fa-bars:before{
+        padding: 5px;
+        font-size:17px;
+        cursor:pointer;
+    }
+
+}
+@media (max-width:575.98px) {
+    body > header > div.header_search > div > div > div:nth-child(2) > img{
+        display: none;
+    }
+    body > header > div.header_search > div > div > div:nth-child(1) > img{
+        width: 20vw;
+    }
+    .baivietnoibat_mid h3{
+        margin-top:10px ;
+    }
+    body > main > div > article > section.baivietnoibat > div.baivietnoibat_bottom > div > div.col-6.col-sm-9.col-lg-10 > a > span{
+        display: none;
+    }
+    body > main > div > article > section.baivietmoi > div.baivietmoi_mid.row > div > a > h5{
+        font-size: 7vw;
+    }
+    body > main > div > aside > section.nguoidocviet > div.nguoidocviet_bottom > div > h5 > a{
+        font-size:4vw;
+    }
+}
