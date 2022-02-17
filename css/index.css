@@ -103,9 +103,12 @@ nav{
 nav>ul {
     align-items: center;
     list-style: none;
-    justify-content:flex-start;
+    justify-content:center;
     padding-left:0px;
     margin-bottom: 0px;
+}
+nav>ul>li>a:hover,nav>ul>li>span:hover{
+    color: rgb(0, 73,155);
 }
 nav>ul>li{
     position: relative;
