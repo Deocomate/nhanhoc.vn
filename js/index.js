@@ -1,10 +1,15 @@
 $(document).ready(function () {
-    $(".menumobile").click(function (e) { 
-        $("nav ul li").slideToggle();
+    $('nav>ul').addClass('transform');
+    $(".close_nav i").click(function (e) { 
+        $('nav>ul').addClass('transform');
         
     });
-    $("nav>ul>li span").click(function (e) { 
-        $(this).next().next().slideToggle();
+    $('.menumobile').click(function (e) { 
+        $('nav>ul').removeClass('transform');
+    });
+    $('nav>ul>li').click(function (e) { 
+        $('.child_list').removeClass('child_list_show');
+        $(this).find('.child_list').toggleClass('child_list_show');
         
     });
 });
