@@ -492,13 +492,14 @@ body > main > div > aside > section.nguoidocviet > div.nguoidocviet_bottom > div
         flex-direction: column;
         align-items: flex-start;
         height: 100vh;
-        width: 200px!important;
+        width: 170px!important;
         position: fixed;
         top:0;
         left:0;
         background-color:white;
         margin: 0px;
         transition: .5s;
+        justify-content:flex-start;
     }
     .close_nav{
     width: 100%;
