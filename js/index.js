@@ -12,4 +12,35 @@ $(document).ready(function () {
         $(this).find('.child_list').toggleClass('child_list_show');
         
     });
+    $('nav>ul>li>div>div').click(function (e) { 
+        $(this).toggleClass('slideDown');
+        var valueS = $(this).attr('class');
+        
+        if (valueS == "slideDown") {
+            $('nav>ul>li>div>div').removeClass('slideDown');
+            $('.child_list').slideUp();
+            $(this).addClass('slideDown');
+            $(this).parent().next().slideDown();
+        }   else    {
+            
+
+            $(this).parent().next().slideUp();
+        }
+
+    });
+    $(window).scroll(function () { 
+        var scroll = ($('html,body').scrollTop());
+        if (scroll>144) {
+            $('nav').addClass('fixed-menu');
+            $('.header_search').addClass('mb-50');
+            $('.menumobile img').addClass('visible');
+            $('nav form').addClass('visible');
+        }
+        else{
+            $('nav').removeClass('fixed-menu');
+            $('.header_search').removeClass('mb-50');
+            $('.menumobile img').removeClass('visible');
+            $('nav form').removeClass('visible');
+        }
+    });
 });
