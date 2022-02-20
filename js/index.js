@@ -42,5 +42,15 @@ $(document).ready(function () {
             $('.menumobile img').removeClass('visible');
             $('nav form').removeClass('visible');
         }
+
     });
+    
+    $('.carousel-indicators img').click(function (e) { 
+        $('.carousel-indicators img').attr('src', '../img/slide2.png');
+        $(this).attr('src', '../img/slide1.png');
+    });
+    
+    console.log($('.carousel-indicators img.active'));
+    
+    
 });
